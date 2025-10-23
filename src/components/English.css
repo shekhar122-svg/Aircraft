@@ -1,0 +1,137 @@
+.pricing-section {
+  background-color: #f8f9fa;
+}
+
+.pricing-card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.pricing-card.popular {
+  border: 2px solid #007bff;
+}
+
+.popular-badge {
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 40px;
+  transform: rotate(45deg);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.pricing-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.price-container {
+  margin: 15px 0;
+}
+
+.currency {
+  font-size: 1.5rem;
+  vertical-align: top;
+  color: #6c757d;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.price-suffix {
+  font-size: 1.5rem;
+  vertical-align: top;
+  color: #6c757d;
+}
+
+.gst-info {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+.features-list {
+  flex-grow: 1;
+}
+
+.features-list li {
+  padding: 5px 0;
+}
+
+.btn-flash {
+  background-color: #ff6b6b;
+  /* color: white;
+   */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+
+}
+
+.btn-flash:hover {
+  background-color: #ff5252;
+  color: white;
+}
+
+.btn-action {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn-action:hover {
+  background-color: #0069d9;
+  color: white;
+}
+
+.additional-info {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .price {
+    font-size: 2.5rem;
+  }
+  
+  .currency, .price-suffix {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .price {
+    font-size: 2rem;
+  }
+  
+  .currency, .price-suffix {
+    font-size: 1rem;
+    background-color: #315a87;
+  }
+}

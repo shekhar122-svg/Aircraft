@@ -1,0 +1,35 @@
+/* body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1, h2 {
+  color: #0d6efd;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  color: white !important;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffeeba !important;
+}
+
+.hero-section h1 {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.hero-section p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section button:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+} */
