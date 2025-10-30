@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button, Card, Badge, Form } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import HindiLeadForm from "./HindiLeadForm";
 
 export default function Hindi() {
   return (
@@ -12,7 +13,6 @@ export default function Hindi() {
       "url('https://aircraftdataentry.com/assets/design_blue.db82f773.svg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "120vh",
     position: "relative",
   }}
 >
@@ -882,78 +882,7 @@ export default function Hindi() {
         />
         <h1 className="pt-5 text-primary fw-bold">संपर्क करा</h1>
       </Col>
-
-      {/* उजवीकडील फॉर्म */}
-      <Col xs={12} md={6}>
-        <div
-          className="bg-primary shadow p-5 text-white d-flex flex-column justify-content-center"
-          style={{
-            borderTopLeftRadius: "40px",
-            borderBottomRightRadius: "40px",
-            minHeight: "520px",
-          }}
-        >
-          <Form className="w-100">
-            <Form.Group className="mb-3">
-              <Form.Control
-                type="text"
-                placeholder="पूर्ण नाव"
-                required
-                className="border-0 rounded-3 py-2"
-                style={{ backgroundColor: "#ffffff", color: "#000" }}
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-3">
-              <Form.Control
-                type="email"
-                placeholder="ईमेल पत्ता"
-                required
-                className="border-0 rounded-3 py-2"
-                style={{ backgroundColor: "#ffffff", color: "#000" }}
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-3">
-              <Form.Control
-                type="text"
-                placeholder="विषय"
-                className="border-0 rounded-3 py-2"
-                style={{ backgroundColor: "#ffffff", color: "#000" }}
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-3">
-              <Form.Control
-                type="number"
-                placeholder="+91"
-                className="border-0 rounded-3 py-2"
-                style={{ backgroundColor: "#ffffff", color: "#000" }}
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Control
-                as="textarea"
-                rows={3}
-                placeholder="आपला संदेश"
-                className="border-0 rounded-3"
-                style={{ backgroundColor: "#ffffff", color: "#000" }}
-              />
-            </Form.Group>
-
-            <div className="text-center">
-              <Button
-                variant="light"
-                type="submit"
-                className="fw-semibold px-4 py-2 rounded-pill shadow-sm text-primary"
-              >
-                संदेश पाठवा
-              </Button>
-            </div>
-          </Form>
-        </div>
-      </Col>
+      <HindiLeadForm />
     </Row>
   </Container>
 </section>

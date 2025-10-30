@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Button,Card, Badge, Form } from "react-bootstrap";
-// import "./English.css"
 import "bootstrap-icons/font/bootstrap-icons.css"
 import App from "../App";
+import HindiLeadForm from "./HindiLeadForm";
 
 export default function English() {
   return (
@@ -14,7 +14,6 @@ export default function English() {
       "url('https://aircraftdataentry.com/assets/design_blue.db82f773.svg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "105vh",
     position: "relative",
   }}
   
@@ -141,8 +140,6 @@ export default function English() {
           width: 70px;
           height: 110px;
         }
-          
-
       }
     `}
   </style>
@@ -875,81 +872,11 @@ export default function English() {
         />
         <h1 className="pt-5 text-primary fw-bold"> Contact Us </h1>
       </Col>
-
-         {/* Right Side Contact Form */}
-<Col xs={12} md={6}>
-  <div
-    className="bg-primary shadow p-5 text-white d-flex flex-column justify-content-center"
-    style={{
-      borderTopLeftRadius: "40px",
-      borderBottomRightRadius: "40px",
-      minHeight: "520px",
-    }}
-  >
-    <Form className="w-100">
-      <Form.Group className="mb-3">
-        <Form.Control
-          type="text"
-          placeholder="Full Name"
-          required
-          className="border-0 rounded-3 py-2"
-          style={{ backgroundColor: "#ffffff", color: "#000" }}
-        />
-      </Form.Group>
-
-      <Form.Group className="mb-3">
-        <Form.Control
-          type="email"
-          placeholder="Email Address"
-          required
-          className="border-0 rounded-3 py-2"
-          style={{ backgroundColor: "#ffffff", color: "#000" }}
-        />
-      </Form.Group>
-
-      <Form.Group className="mb-3">
-        <Form.Control
-          type="text"
-          placeholder="Subject"
-          className="border-0 rounded-3 py-2"
-          style={{ backgroundColor: "#ffffff", color: "#000" }}
-        />
-      </Form.Group>
-
-      <Form.Group className="mb-3">
-        <Form.Control
-          type="number"
-          placeholder="+91"
-          className="border-0 rounded-3 py-2"
-          style={{ backgroundColor: "#ffffff", color: "#000" }}
-        />
-      </Form.Group>
-
-      <Form.Group className="mb-4">
-        <Form.Control
-          as="textarea"
-          rows={3}
-          placeholder="Your Message"
-          className="border-0 rounded-3"
-          style={{ backgroundColor: "#ffffff", color: "#000" }}
-        />
-      </Form.Group>
-
-      <div className="text-center">
-        <Button
-          variant="light"
-          type="submit"
-          className="fw-semibold px-4 py-2 rounded-pill shadow-sm text-primary"
-        >
-          Send Message
-        </Button>
-      </div>
-    </Form>
-  </div>
-  </Col>
+<HindiLeadForm/>
     </Row>
   </Container>
 </section>
+
 
                              {/* Contact Details Section */}
 <section id="contact-session"
@@ -967,7 +894,7 @@ export default function English() {
             href="mailto:demo@aircraftdataentry.com"
             className="text-white text-decoration-none"
           >
-            demo@aircraftdataentry.com
+            lokhandeshekhar122@gmail.com
           </a>
         </p>
 
